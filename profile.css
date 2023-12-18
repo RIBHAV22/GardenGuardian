@@ -1,0 +1,121 @@
+/* profile.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  margin-top: 10rem;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.logoo {
+  height: 5rem;
+  width: 21rem;
+  background-color: white;
+  float: left;
+  display: flex;
+  justify-content: top; /* This property is invalid, remove it */
+  margin-top: 1.3rem; /* Adjusted value */
+}
+
+#photoo {
+  height: 4.4rem;
+  width: 16rem;
+  margin-top: 0.8rem;
+  margin-left: 01rem;
+  /* border-radius: 50%; */
+  /* margin-right: 0.5rem; */
+}
+
+.profile-container h1,
+h2,
+h3 {
+  color: #333;
+}
+
+.profile-container h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.profile-container div {
+  margin-bottom: 20px;
+}
+
+.profile-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-container li {
+  margin-bottom: 10px;
+}
+
+/* Style the user icon */
+#user {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Add hover effect to the user icon */
+#user:hover {
+  color: #007bff;
+}
+
+.logout-container {
+  margin-left: 1400px;
+  margin-right: 1px;
+  /* margin-top: 5px; */
+  transform: translateY(10px);
+}
+
+/* {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ {
+  background-color: #0056b3;
+} */
+
+#logoutButton {
+  margin-top: 1.4rem;
+  height: 3rem;
+  width: 7rem;
+  margin-left: -3rem;
+  background-color: #00ed64;
+  outline: none;
+  border: 1px solid #00684a;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#logoutButton:hover {
+  border-radius: 60px;
+}
+
+.profile-container li {
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.profile-container li:hover {
+  background-color: #f0f0f0; /* Change the background color on hover */
+  cursor: pointer; /* Change the cursor to indicate interactivity */
+}

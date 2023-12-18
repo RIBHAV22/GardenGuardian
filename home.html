@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | GardenGuardians</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logoo"><a href="home.html"><img src="images/logo.png" alt="" id="photoo"></a></div>
+        <!-- <div><i class="glyphicon glyphicon-user" id="user"></i></div> -->
+        <div class="search-bar-container active">
+            <img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+                alt="magnifier" class="magnifier" />
+            <input type="text" class="input" placeholder="Search ..." />
+            <!-- Add a container to display search results -->
+            <div class="search-results" id="searchResults"></div>
+
+            <!-- <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" alt="mic-icon" -->
+            <!-- class="mic-icon" /> -->
+        </div>
+        <!-- <input type="text" placeholder="Search" id="search"> -->
+        <i class="fa-solid fa-user" id="user"></i>
+
+    </div>
+    <div class="welcome-box">
+        Welcome, <span id="username"></span>!
+    </div>
+    <div class="profile-container">
+        <h1>Plants in Nursery</h1>
+        <div>
+            <ul id="plantList"></ul>
+        </div>
+    </div>
+
+    <div id="activityLogModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogModalButton">&times;</span>
+            <h2>Activity Log</h2>
+            <ul id="activityLogList"></ul>
+        </div>
+    </div>
+    <!-- Add this inside the <body> tag -->
+    <div id="tipsModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close" onclick="closeTipsModal()" id="closeModalButton">&times;</span>
+            <h2>Plant Care Tips</h2>
+            <p id="tipsContent"></p>
+        </div>
+    </div>
+    <div class="act">
+        <button id="addActivityButton" class="addActivityButton">Add Activity</button>
+
+        <div id="activityPopup" style="display: none;">
+            <label for="plantDropdown" class="txt">Select Plant:</label>
+            <select id="plantDropdown">
+                <!-- Populate this dropdown dynamically with plants from the user's nursery -->
+                <option value="plant1">Plant 1</option>
+                <option value="plant2">Plant 2</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <button id="logActivityButton">Log Activity</button>
+        </div>
+    </div>
+    <!-- <div class="nursery-container">
+        <h2>Nursery</h2>
+        <ul id="plantList"></ul>
+    </div> -->
+    <div id="preloader" class="preloader" style="display: none">
+        <div class="loader"></div>
+    </div>
+    <script src="home.js"></script>
+    <script src="https://kit.fontawesome.com/7daae4d489.js" crossorigin="anonymous"></script>
+    <!-- Add this in the <head> section of your HTML file -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.8/push.min.js"></script>
+    <script async
+        src="https://storage.googleapis.com/promptly-static/77bd5641320cd1089397b78d680e04321a68afc8/static/js/embed-v1.js"></script>
+    <promptly-app-embed published-app-id="c82d05ad-1933-4d41-9e8b-4544ec39e271" chat-bubble="true"
+        host="https://trypromptly.com"></promptly-app-embed>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@elasticemail/elasticemail-client"></script> -->
+
+</body>
+
+</html>

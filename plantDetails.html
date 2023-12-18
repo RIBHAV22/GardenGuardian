@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Details | GardenGuardians</title>
+    <link rel="stylesheet" href="plantDetails.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+</head>
+
+<body class="background-image">
+    <div class="navbar">
+        <div class="logoo"><a href="home.html"><img src="images/logo.png" alt="" id="photoo"></a></div>
+        <div class="btn">
+            <!-- Add this button next to the "Add Plant" button -->
+            <a href="#"><button class="add">Add Plant</button></a>
+            <a href="#"><button class="remove">Remove Plant</button></a>
+        </div>
+        <div class="search-bar-container active">
+            <img src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+                alt="magnifier" class="magnifier" />
+            <input type="text" class="input" placeholder="Search ..." />
+            <div class="search-results" id="searchResults"></div>
+        </div>
+        <i class="fa-solid fa-user" id="user"></i>
+    </div>
+    <div class="plant-details-container">
+
+        <div class="plant-details">
+            <h1 id="commonName"></h1>
+            <p id="scientificName"></p>
+            <p id="cycle"></p>
+            <p id="watering"></p>
+            <p id="sunlight"></p>
+        </div>
+        <img id="plantImage" alt="Plant Image">
+    </div>
+    <script src="plantDetails.js"></script>
+    <script src="https://kit.fontawesome.com/7daae4d489.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

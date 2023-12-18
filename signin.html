@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5+z0I5t9zPQnW23DOQl00aPcI8NUy5tRwhfFe1a3Z7WHkF/Hdt3Ia1j7FfFqXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="login-box">
+        <h2>Sign In</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Email</label>
+            </div>
+            <div class="show-password" id="showPassword">
+                &#x1F441;
+                <!-- <i class="fas fa-eye"></i> -->
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="" id="password">
+                <label>Password</label>
+            </div>
+            <a href="index.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
+        <div class="result-box" id="resultBox"></div>
+    </div>
+    <script src="signin.js"></script>
+</body>
+
+</html>
